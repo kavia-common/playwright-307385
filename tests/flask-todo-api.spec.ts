@@ -45,8 +45,8 @@ test.describe('Flask Todo List - API (request) flow', () => {
 
     const createTodoResponse = await request.post('/', {
       form: {
-        content: 'Buy milk',
-        due_date: dueDate,
+        newItem: 'Buy milk',
+        duedate: dueDate,
       },
       // Playwright will set appropriate form encoding when using `form`.
       maxRedirects: 0, // capture redirect status if server redirects after POST
